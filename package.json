@@ -1,0 +1,35 @@
+{
+    "name": "newrelics_tech_support_is_garbage",
+    "version": "0.0.1",
+    "engines": {
+        "node": "8"
+    },
+    "main": "./src/entry.js",
+    "scripts": {
+        "start": "node ./build/prodBundle.js",
+        "buildprod": "./node_modules/.bin/webpack --config=ops/prodWebpack.js",
+        "beautify": "js-beautify --config .jsbeautifyrc -f `find ./src ./test -type f -name \"*.js\"` -r -n",
+        "linter": "eslint --config .eslintrc.json --fix `find ./src ./test -type f -name \"*.js\"`",
+        "format": "npm run beautify && npm run linter"
+    },
+    "dependencies": {
+        "newrelic": "^4.8.0"
+    },
+    "devDependencies": {
+        "aws-sdk": "^2.301.0",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
+        "chai-http": "^4.0.0",
+        "eslint": "^4.19.1",
+        "js-beautify": "^1.7.5",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.18.1",
+        "raw-loader": "^0.5.1",
+        "webpack": "^4.17.1",
+        "webpack-cli": "^3.1.0"
+    }
+}
