@@ -1,5 +1,5 @@
 const envName = process.env.NODE_ENV
-export const config = {
+exports.config = {
     app_name: [`${envName}.mobileApi`],
     license_key: 'b872f5b10d584b306e866adf8c0e808e8ba204d5',
     logging: {
