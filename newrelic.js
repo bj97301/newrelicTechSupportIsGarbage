@@ -1,7 +1,7 @@
 const envName = process.env.NODE_ENV
 exports.config = {
     app_name: [`${envName}.mobileApi`],
-    license_key: 'b872f5b10d584b306e866adf8c0e808e8ba204d5',
+    license_key: 'derpderpkey',
     logging: {
         /**
          * Level at which to log. 'trace' is most useful to New Relic when diagnosing
